@@ -32,3 +32,33 @@ def main():
         for i in range(len(country_chosen)):
             unknown_word.append("_")
         print(unknown_word)
+                while True:
+            choice  = input("What letter do you choose?")
+            is_in_word = False
+            if choice in country_chosen:
+                index = country_chosen.index(choice)
+                unknown_word[index] = country_chosen[index]
+                is_in_word = True
+            else:
+                is_in_word = False
+            print(unknown_word)
+
+            if is_in_word == False:
+                lives -= 1
+
+
+                if lives <= 0:
+                    print("The answer was " + str(country_chosen))
+                    print("Game over... :(")
+                    win_lose()
+                else:
+                    print("You have " + str(lives) + " lives left.")
+            else:
+                if '_' in unknown_word:
+                    pass
+                else:
+                    print("Good job!")
+                    win_lose()
+
+                pass
+
