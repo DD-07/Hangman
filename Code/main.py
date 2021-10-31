@@ -1,6 +1,6 @@
+#start program
 import random as ran
 import sys
-
 # Create list with all the hangman content
 #create function to randomly choose the hangman content
 # create function to see if the letter is present in the list
@@ -72,6 +72,7 @@ def win_lose():
 
 while True:
     main()
+#end program
 
 
 
