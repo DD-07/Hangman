@@ -61,4 +61,17 @@ def main():
                     win_lose()
 
                 pass
+def win_lose():
+
+    play_again = input("Play again?")
+    while True:
+        if play_again == "yes" or play_again == "Yes":
+            main()
+        else:
+            sys.exit()
+
+while True:
+    main()
+
+
 
